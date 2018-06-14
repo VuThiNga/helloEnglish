@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">HelloEnglish</string>
+    <string name="speech_not_support">Device not support speech to text</string>
+</resources>

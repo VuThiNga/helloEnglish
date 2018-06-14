@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSizeBig">30dp</dimen>
+    <dimen name="textSizeOverBig">40dp</dimen>
+    <dimen name="textSizeMedium">24dp</dimen>
+    <dimen name="textSize20">20dp</dimen>
+    <dimen name="textSizeNormal">16dp</dimen>
+    <dimen name="textSizeSmall">12dp</dimen>
+    <dimen name="margin_hor">12dp</dimen>
+    <dimen name="margin_ver">8dp</dimen>
+    <dimen name="icon_size">24dp</dimen>
+    <dimen name="pading_big">60dp</dimen>
+    <dimen name="size_circle">48dp</dimen>
+    <dimen name="size_item_class">112dp</dimen>
+</resources>

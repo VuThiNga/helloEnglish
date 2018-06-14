@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorActionBar">#1fb99a</color>
+    <color name="color_class_6">#ec8ae9</color>
+    <color name="color_class_7">#94c4ff</color>
+    <color name="color_class_8">#8ee2b0</color>
+    <color name="color_class_9">#77e169</color>
+    <color name="color_class_10">#f15f5f</color>
+    <color name="color_class_11">#6c72ea</color>
+    <color name="color_class_12">#f7e450</color>
+
+</resources>

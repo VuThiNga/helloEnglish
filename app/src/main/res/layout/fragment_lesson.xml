@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_class"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_class_6"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_hor"
+        android:paddingRight="@dimen/margin_hor">
+
+        <ImageView
+            android:id="@+id/img_back_class"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+        <TextView
+            android:id="@+id/tv_class"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_hor"
+            android:layout_weight="6"
+            android:fontFamily="casual"
+            android:text="Class 6"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSizeNormal"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/list_lesson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

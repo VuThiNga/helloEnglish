@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_class_11"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_width="wrap_content"
+        android:layout_height="?actionBarSize"
+        android:paddingLeft="@dimen/margin_hor"
+        android:paddingTop="@dimen/margin_hor"
+        android:src="@drawable/ic_close_white_24dp" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/img_close"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_item_lesson"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_add_favourite"
+            android:layout_width="32dp"
+            android:layout_height="0dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/margin_hor"
+            android:layout_weight="1"
+            android:src="@drawable/ic_star_blue_grey_200_24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_word_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="are"
+                android:textColor="@color/color_class_11"
+                android:textSize="@dimen/textSize20"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_pro_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="aaa"
+                android:textSize="@dimen/textSizeNormal" />
+
+            <TextView
+                android:id="@+id/tv_vi_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lines="2"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="aaa"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textSizeNormal" />
+
+            <TextView
+                android:id="@+id/tv_example_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lines="2"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="You are very kind"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textSizeNormal" />
+
+            <TextView
+                android:id="@+id/tv_exam_vi_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lines="2"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="You are very kind"
+                android:textSize="@dimen/textSizeSmall" />
+
+            <ImageView
+                android:id="@+id/img_speak_sentences"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icons8_speaker_24"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_hor"/>
+
+            <ImageView
+                android:id="@+id/img_speak_word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/icons8_voice_48"
+                android:layout_marginTop="@dimen/margin_hor"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_hor">
+                <TextView
+                    android:id="@+id/tv_score_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="@android:color/black"
+                    android:paddingLeft="@dimen/margin_ver"/>
+                <ImageView
+                    android:id="@+id/img_score_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_star_blue_grey_200_24dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/margin_ver">
+
+        <ImageView
+            android:id="@+id/img_previous"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:src="@drawable/ic_keyboard_arrow_left_white_24dp" />
+
+        <FrameLayout
+            android:id="@+id/layout_speech"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_item_speech_to_text">
+            <ImageView
+                android:id="@+id/img_speech_to_text"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icons8_microphone_48" />
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/img_next"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:src="@drawable/ic_keyboard_arrow_right_white_24dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_adapter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_class_6"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="75dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/shape_item_lesson"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_lesson_num"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Lesson 1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textSizeNormal"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_lesson"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/tv_lesson_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Metting"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textSize20"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_num_word"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Số lượng từ vựng"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textSizeNormal" />
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/margin_hor"
+            android:layout_weight="1"
+            android:background="@drawable/shape_button"
+            android:text="Bắt đầu"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSize20" />
+    </LinearLayout>
+
+</LinearLayout>

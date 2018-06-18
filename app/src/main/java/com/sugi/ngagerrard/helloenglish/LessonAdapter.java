@@ -1,7 +1,10 @@
 package com.sugi.ngagerrard.helloenglish;
 
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
+import android.os.Environment;
 import android.support.v4.view.PagerAdapter;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +14,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+
+import java.io.File;
 
 /**
  * Created by Nga Gerrard on 29/05/2018.
@@ -51,6 +56,13 @@ public class LessonAdapter extends PagerAdapter {
         tvNumWord.setText("Số lượng từ vựng: " + data.getTotalWord());
         int drawableResourceId = imgLesson.getContext().getResources().
                 getIdentifier(data.getImage(), "drawable", imgLesson.getContext().getPackageName());
+
+//        String completePath = Environment.getExternalStorageDirectory() + "/" + data.getImage();
+//
+//        File file = new File(completePath);
+//        Uri uri = Uri.fromFile(file);
+
+        //Glide.with().load(uri).into(imageView);
         Glide.with(imgLesson.getContext()).load(drawableResourceId)
                 .placeholder(R.drawable.sport).into(imgLesson);
         btnStart.setBackgroundResource(mILessonAdapter.customButton());

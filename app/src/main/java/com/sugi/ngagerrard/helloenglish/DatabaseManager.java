@@ -116,6 +116,7 @@ public class DatabaseManager {
         return listLesson;
     }
 
+    //test git
     public List<Word> getListWordByLesson(String lesson) {
         List<Word> words = new ArrayList<Word>();
         openDB();
